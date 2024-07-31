@@ -1,1 +1,29 @@
+K8's  have majorly two planes 1) Control plane and 2) Data plane 
+1) Control Plane 
+@ API Server
+It is heart of the K8's Server.
+Basically it takes the all the requests from external points and worker nodes.
+@ Scheduler
+It responsible for scheduling our pods and scheduling the resources on k8's cluster.
+@ etcd 
+Basically acts has backing store for entire cluster information
+Basically it is in Key-Value pairs in the information of whole cluster.
+@ Controller Manger 
+It controles the all the agents in the  data nad control node (ex:- Replica set)
+@ Cloud Controller Manger
+It acts has a bridge for our K8's cluster and the cloud platform (AWS,AZURE e.t.c)
+
+2) Data Plane 
+@ Kubelet
+It is used to check the health and presence of pod.
+If it find out any abnormality ,it will pass this information to the k8's component of Control plane(API Server).
+It is responsible for pod creation.
+@ Kubeproxy
+It is  used to provide networking to our pod.
+It contains IP addresses,Security of pods,load balancers and IP tables e.t.c.
+@ Container Runtime 
+It is used to run our pod on one of the below runtimes 
++ Dockershim + Container-d + Cri -o
+
+
 
