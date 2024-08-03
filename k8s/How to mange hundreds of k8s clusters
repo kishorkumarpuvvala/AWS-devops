@@ -1,1 +1,8 @@
-
+  How to manage hundreds of Kubernates clusters on production environment
+To manage hundreds of kubernates clusters by usinng this installations 1) KOPS 2) KubeADM
+Compared to the KubeADM ,Kops is smoothly do the configurations.So,most of the devops engineers are install KOPS on theproduction system
+By using KOPS weare doing all the K8's lifecycles
+                    1) Installing Cluster
+                    2) Upgrading
+                    3)Modulations
+                    4)Delations
